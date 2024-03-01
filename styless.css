@@ -11,7 +11,26 @@
 }
 
 html {
-	font-size: 62.5%;
+	font-size: 62.5%; /* Set base font size for easier responsive scaling */
+}
+
+/* Apply responsive styles for different screen sizes */
+@media only screen and (max-width: 768px) {
+    .header {
+        padding: 1rem 5%; /* Adjust padding for smaller screens */
+    }
+    .header .logo img {
+        height: 8rem; /* Adjust logo height for smaller screens */
+    }
+    .header .navbar a {
+        font-size: 1.6rem; /* Adjust font size for navigation links */
+    }
+    .home .content .title {
+        font-size: 3.5rem; /* Adjust title font size for smaller screens */
+    }
+    .home .content .description {
+        font-size: 1.6rem; /* Adjust description font size for smaller screens */
+    }
 }
 
 section {
@@ -93,7 +112,6 @@ section {
 .home .image img {
 	width: 100%;
 }
-
 
 footer {
 	background-color: #333;
