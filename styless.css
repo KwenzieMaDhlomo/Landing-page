@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+* {
+	font-family: 'Nunito', sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	text-transform: capitalize;
+	transition: .2s linear;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+section {
+	padding: 2rem 9%;
+}
+
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 2rem 9%;
+	z-index: 2;
+	background: #ff008c;
+}
+
+.header .logo img {
+	height: 11rem;
+}
+
+.header .navbar #close {
+	display: none;
+}
+
+.header .navbar a {
+	font-size: 2rem;
+	margin-right: 2rem;
+	color: #fff;
+}
+
+.header .navbar a:hover {
+	color: #d3ad7f;
+}
+
+.header #menu {
+	display: none;
+}
+
+.home {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1.5rem;
+	min-height: 100vh;
+	align-items: center;
+	justify-content: center;
+	background: #ff008c;
+}
+
+.home .content {
+	flex: 1 1 40rem;
+}
+
+.home .content .title {
+	font-size: 5rem;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.home .content .title span {
+	text-transform: uppercase;
+	color: #d3ad7f;
+}
+
+.home .content .description {
+	font-size: 2rem;
+	font-weight: lighter;
+	line-height: 1.8;
+	padding: 1rem 0;
+	color: #fff;
+}
+
+.home .image {
+	flex: 1 1 40rem;
+}
+
+.home .image img {
+	width: 100%;
+}
+
+
+footer {
+	background-color: #333;
+	color: #fff;
+	padding: 20px 0;
+	text-align: center;
+}
