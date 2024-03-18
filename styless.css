@@ -11,26 +11,7 @@
 }
 
 html {
-	font-size: 62.5%; /* Set base font size for easier responsive scaling */
-}
-
-/* Apply responsive styles for different screen sizes */
-@media only screen and (max-width: 768px) {
-    .header {
-        padding: 1rem 5%; /* Adjust padding for smaller screens */
-    }
-    .header .logo img {
-        height: 8rem; /* Adjust logo height for smaller screens */
-    }
-    .header .navbar a {
-        font-size: 1.6rem; /* Adjust font size for navigation links */
-    }
-    .home .content .title {
-        font-size: 3.5rem; /* Adjust title font size for smaller screens */
-    }
-    .home .content .description {
-        font-size: 1.6rem; /* Adjust description font size for smaller screens */
-    }
+	font-size: 62.5%;
 }
 
 section {
@@ -47,7 +28,7 @@ section {
 	justify-content: space-between;
 	padding: 2rem 9%;
 	z-index: 2;
-	background: #ff008c;
+	background: #CD5C5C;
 }
 
 .header .logo img {
@@ -79,7 +60,7 @@ section {
 	min-height: 100vh;
 	align-items: center;
 	justify-content: center;
-	background: #ff008c;
+	background: #CD5C5C;
 }
 
 .home .content {
@@ -111,6 +92,99 @@ section {
 
 .home .image img {
 	width: 100%;
+}
+
+.about,
+.menu,
+.contact {
+	background-color: #CD5C5C; /* Same background color as the header */
+	padding: 2rem 9%; /* Same padding as the header */
+	color: #fff; /* Same text color as the header */
+}
+
+.about h2,
+.menu h2,
+.contact h2 {
+	margin-bottom: 20px;
+	font-size: 3rem; /* Same font size as the header */
+	text-transform: uppercase;
+	align-items: center;
+	justify-content: center; 
+}
+
+.about p,
+.menu ul,
+.contact p {
+	font-size: 2rem; /* Same font size as the header */
+	line-height: 1.8;
+}
+
+.about p,
+.contact p {
+	margin-bottom: 1.5rem;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.menu .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 500px; /* Limiting the width of the menu items */
+    margin-top: 20px;
+}
+
+.menu-item {
+    background-color:#F08080;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+    flex: 1 1 100px; /* Adjust width of each menu item */
+}
+
+.menu-item img {
+    max-width: 50%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.flavor-prices {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.flavor-price {
+    flex: 0 1 30%;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #000000;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.flavor-price:hover {
+    transform: translateY(-5px);
+}
+
+.flavor-price h3 {
+    font-size: 1.6rem;
+    margin-bottom: 5px;
+}
+
+.flavor-price p {
+    font-size: 1.4rem;
+    color: #DB7093;
 }
 
 footer {
